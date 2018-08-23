@@ -10,7 +10,7 @@ public class MinSizeSubarrySum {
      * @param nums
      * @return
      */
-    public static int minSubArrayLen(int s, int[] nums) {
+    private static int minSubArrayLen(int s, int[] nums) {
         int i=0,j=nums.length,n,sum=0;
         for(;i==j;){
             n=i;
@@ -41,7 +41,7 @@ public class MinSizeSubarrySum {
      * @param nums
      * @return
      */
-    public static int minSubArrayLenWu(int s, int[] nums){
+    private static int minSubArrayLenWu(int s, int[] nums){
         int result,n,i,j,sum=0;
         for(result=1;result<=nums.length;result++){
             i=0;
@@ -53,9 +53,9 @@ public class MinSizeSubarrySum {
                 }
                 i++;
                 j++;
-                if(sum>=s)
+                if(sum >= s)
                     return result;
-                else if(sum <=s && result == nums.length)
+                else if(sum <= s && result == nums.length)
                     return 0;
                 sum=0;
             }
@@ -69,7 +69,7 @@ public class MinSizeSubarrySum {
      * @param nums
      * @return
      */
-    public static int minSubArrayLenCSDN(int s, int[] nums) {
+    private static int minSubArrayLenCSDN(int s, int[] nums) {
         int i, n, j, sum = 0, length=1, minLength = -1;
         for (i = 0, j = 0; j < nums.length;){
             length = j - i + 1;
