@@ -16,6 +16,21 @@ package chapterOne;
  * 注意：
  *
  * A 和 B 长度不超过 100。
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ * 出错一次：
+ *      先循环判断大小后判断长度
+ *
+ * 把更强的判断放在较弱判断后面
+ *
  */
 public class RotateString {
 
