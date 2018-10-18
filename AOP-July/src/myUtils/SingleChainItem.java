@@ -7,12 +7,12 @@ public class SingleChainItem<T> {
     T data;
     SingleChainItem<T> next;
 
-    SingleChainItem() {
+    public SingleChainItem() {
         data = null;
         next = new SingleChainItem<T>();
     }
 
-    SingleChainItem(T t) {
+    public SingleChainItem(T t) {
         data = t;
         next = new SingleChainItem<T>();
     }
