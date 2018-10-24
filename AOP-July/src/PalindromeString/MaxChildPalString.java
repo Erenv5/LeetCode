@@ -46,6 +46,6 @@ public class MaxChildPalString {
     }
 
     public static void main(String[] args) {
-        System.out.println(findMaxNum("1madam123"));
+        System.out.println(findMaxNum("1maam123"));
     }
 }
